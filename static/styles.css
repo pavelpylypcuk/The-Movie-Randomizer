@@ -1,0 +1,143 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    background-color: #f6f6e4;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+.jumbotron {
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    min-width: 100vh;
+    background-color: #1a1a1a;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    text-decoration:none;
+}
+
+#banner {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+
+}
+
+#title {
+    font-size: 20px;
+}
+
+#year_duration, #result_genre {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+#imdb_button, #apology {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+#result_genre {
+    padding-bottom: 5px;
+}
+
+#description {
+    padding-bottom: 50px;
+}
+
+.result_container {
+  display: flex;
+}
+
+#poster {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+#imdb {
+  width: 40px;
+  height: 30px;
+  object-fit: contain;
+}
+
+
+form {
+    margin: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .jumbotron {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+    #banner {
+        padding-left: 3.5vw;
+        font-size: 1.5rem;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+    }
+}
+
+@media screen and (max-height: 600px) {
+
+    form {
+        font-size: 0.75rem;
+    }
+    .form-control {
+        font-size: 0.75rem;
+    }
+    .btn {
+        font-size: 0.75rem;
+    }
+
+}
+
+.btn {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+}
+
+#button_row {
+    justify-content: center;
+}
+
+.lead {
+    color: white;
+}
+
+

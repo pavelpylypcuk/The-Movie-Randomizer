@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    {% for row in result %}
+        <div class="result_container">
+            <table class="item">
+                <thead>
+                    <tr>
+                        <th id="title">{{ row.original_title }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="year_duration">{{ row.year }} | {{ row.duration }} mins | {{ row.avg_vote }} | {{ row.country }}</td>
+                    </tr>
+                    <tr>
+                        <td id="result_genre">{{ row.genre }}</td>
+                    </tr>
+                    <tr>
+                        <td id="imdb_button">View more at <a href="https://www.imdb.com/title/{{ row.imdb_title_id }}/" target="_blank"><img alt="Imdb" id="imdb" src="/static/IMDB_large.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td id="description">{{ row.description }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/" class="btn" role="button">Go back</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {% endfor %}
+{% endblock %}

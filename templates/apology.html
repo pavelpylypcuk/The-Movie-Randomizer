@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block main %}
+        <div class="result_container">
+            <table class="item">
+                <thead>
+                    <tr>
+                        {% if genre != "%" and (year != 0 or latest_year != 2021) %}
+                        <th id="apology">It appears no {{ genre }} movie in this time period is <em>that</em> good. Sorry.</th>
+                        {% elif genre != "%" %}
+                        <th id="apology">It appears no {{ genre }} movie is <em>that</em> good. Sorry.</th>
+                        {% elif year != 0 or latest_year != 2021 %}
+                        <th id="apology">It appears no movie in this time period is <em>that</em> good. Sorry.</th>
+                        {% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/" class="btn" role="button">Go back</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

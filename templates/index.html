@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action="/" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="genre_id">Genre</label>
+                <select name="genre" id="genre_id" class="form-control">
+                    <option selected>Any</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Biography</option>
+                    <option>Comedy</option>
+                    <option>Crime</option>
+                    <option>Drama</option>
+                    <option>Fantasy</option>
+                    <option>Horror</option>
+                    <option>Musical</option>
+                    <option>Romance</option>
+                    <option>Sci-Fi</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="rating_id">Minimum rating</label>
+                <select name="rating" id="rating_id" class="form-control">
+                    <option selected>Any</option>
+                    <option>9.0</option>
+                    <option>8.0</option>
+                    <option>7.0</option>
+                    <option>6.0</option>
+                    <option>5.0</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="language_id">Language</label>
+                <select name="language" id="language_id" class="form-control">
+                    <option selected>Any</option>
+                    <option>English</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="form-row" id="second_row">
+            <div class="form-group col-md-4">
+                <label for="year_id">Earliest year</label>
+                <select name="year" id="year_id" class="form-control">
+                    <option selected>Any</option>
+                    <option>1950</option>
+                    <option>1960</option>
+                    <option>1970</option>
+                    <option>1980</option>
+                    <option>1990</option>
+                    <option>2000</option>
+                    <option>2010</option>
+                    <option>2020</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="latest_year_id">Latest year</label>
+                <select name="latest_year" id="latest_year_id" class="form-control">
+                    <option selected>Any</option>
+                    <option>1950</option>
+                    <option>1960</option>
+                    <option>1970</option>
+                    <option>1980</option>
+                    <option>1990</option>
+                    <option>2000</option>
+                    <option>2010</option>
+                    <option>2020</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row" id="button_row">
+            <button type="submit" class="btn">Randomize</button>
+        </div>
+    </form>
+{% endblock %}
